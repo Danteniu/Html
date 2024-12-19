@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный сайт - Минаев Даниил Валерьевич</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="photo1.jpg" alt="Лого">
+            </div>
+            <div class="profile">
+                <span>Группа ЭФБО-07-23</span>
+                <span>Минаев Даниил Валерьевич</span>
+            </div>
+        </header>
+        <header>
+            <div class="second-h">
+                <nav>
+                    <ul>
+                        <div class="menu">
+                            <li><a href="#home">Главная</a></li>
+                        </div>
+                        <div class="menu">
+                            <li><a href="#">Первый семестр</a></li>
+                        </div>
+                        <div class="menu">
+                            <li><a href="#">Второй семестр</a></li>
+                        </div>
+                        <div class="menu">
+                            <li><a href="#services">Услуги</a></li>
+                        </div>
+                        <div class="menu">
+                            <li><a href="#">Авторизация</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <button class="burger-menu" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <h3>Разделы</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#frontend">Фронтенд</a></li>
+                    <li><a href="#backend">Бэкенд</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <section class="content" id="home">
+                <h1>Добро пожаловать на мой сайт</h1>
+                <p>Меня зовут Минаев Даниил Валерьевич и я начинающий специалист по веб-разработке.</p>
+
+                <div class="profile-picture">
+                    <img src="profile.jpg" alt="Профиль">
+                </div>
+
+                <h2 id="frontend">Фронтенд</h2>
+                <p>Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные
+                    элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики
+                    используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать
+                    интерактивные и привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство
+                    использования и эстетическую привлекательность.</p>
+
+                <button id="changePractices">Посмотреть практики второго семестра</button>
+
+
+                <h2 id="backend">Бэкенд</h2>
+                <p>Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных,
+                    управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки
+                    программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для
+                    создания
+                    логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и безопасность
+                    данных.</p>
+            </section>
+
+            <section class="content" id="services">
+                <h1>Разработка веб-приложений</h1>
+
+                <div class="services">
+                    <div class="service-card">
+                        <div class="image-placeholder">
+                            <img src="photo1.jpg" alt="Сайт-визитка">
+                        </div>
+                        <h3>Сайт-визитка</h3>
+                        <button onclick="openModal('Сайт-визитка')">Заказать</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="image-placeholder">
+                            <img src="photo1.jpg" alt="Корпоративный сайт">
+                        </div>
+                        <h3>Корпоративный сайт</h3>
+                        <button onclick="openModal('Корпоративный сайт')">Заказать</button>
+                    </div>
+                    <div class="service-card">
+                        <div class="image-placeholder">
+                            <img src="photo1.jpg" alt="Интернет-магазин">
+                        </div>
+                        <h3>Интернет-магазин</h3>
+                        <button onclick="openModal('Интернет-магазин')">Заказать</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content" id="lorem-section">
+                <div class="lorem-container">
+                    <div class="lorem-box">
+                        <h2>О нас</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                    <div class="lorem-box">
+                        <h2>Наши преимущества</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                    <div class="lorem-box">
+                        <h2>Наш подход</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip
+                            ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="lectures">
+                <h2>Перечень лекций</h2>
+                <button id="showLectures">Показать лекции</button>
+                <table id="lecturesTable" style="display: none; opacity: 0; transition: opacity 0.5s;">
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Тема лекции</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Введение в веб-разработку</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Основы HTML и CSS</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Тема</th>
+                            <th>Отметка о посещении</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Введение в веб-разработку</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Основы HTML</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Основы CSS</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>JavaScript: основы и DOM</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Продвинутый JavaScript</td>
+                            <td>✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="practicals">
+                <h2>Перечень практических занятий</h2>
+                <form id="studentForm">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <button type="submit">Отправить</button>
+                </form>
+                <p id="formMessage" style="display: none; transition: color 0.5s;">Форма отправлена!</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>№</th>
+                            <th>Тема</th>
+                            <th>Отметка о посещении</th>
+                            <th>Отметка о выполнении</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Создание простой веб-страницы</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Стилизация веб-страницы с CSS</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Разработка интерактивных элементов с JavaScript</td>
+                            <td>✓</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Работа с API и асинхронными запросами</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="pdf-document">
+                <h2>PDF Документ</h2>
+                <object data="ПР_7_Адаптивная_верстка_и_отзывчивый_дизайн.pdf" type="application/pdf" width="100%"
+                    height="600px">
+                    <p>Ваш браузер не поддерживает встроенные PDF. Вместо этого вы можете <a
+                            href="ПР_7_Адаптивная_верстка_и_отзывчивый_дизайн.pdf">скачать
+                            PDF</a>.</p>
+                </object>
+            </section>
+            <section id="yandex-map">
+                <h2>Наше местоположение</h2>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aваш_уникальный_идентификатор"
+                    width="100%" height="400" frameborder="0"></iframe>
+            </section>
+            <section id="video-section">
+                <h2>Видео</h2>
+                <div class="video-container">
+                    <video width="400" height="300" controls>
+                        <source src="Forest_01___4K_res.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео тег.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <video width="400" height="300" controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео тег.
+                    </video>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© Минаев Даниил Валерьевич, 2024</p>
+            <div class="social-icons">
+                <a href="#"><img src="whatsapp.png" alt="WhatsApp"></a>
+                <a href="#"><img src="vk.png" alt="VK"></a>
+            </div>
+        </footer>
+    </div>
+
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Разработка веб-приложения: <span id="serviceType"></span></h2>
+            <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+
+            <form id="serviceForm">
+                <label for="name">Как вас зовут</label>
+                <input type="text" id="name" placeholder="например Иванов Иван Иванович">
+
+                <label for="email">Ваш e-mail</label>
+                <input type="email" id="email" placeholder="test@mail.ru">
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="+7 919 999 99 99">
+
+                <label for="country">Страна</label>
+                <select id="country">
+                    <option value="Россия">Россия</option>
+                </select>
+
+                <label for="date">Дата</label>
+                <input type="date" id="date">
+
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" rows="4"></textarea>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Согласен на обработку моих персональных данных</label>
+                </div>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
